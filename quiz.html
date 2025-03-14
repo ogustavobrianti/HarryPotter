@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Hogwarts - Descubra sua Casa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-quiz"> <!-- Classe para o fundo do Quiz -->
+  <div class="container">
+    <h1>Quiz de Hogwarts</h1>
+    <div id="quiz">
+      <div class="question" id="question1">
+        <p>1. Qual dessas qualidades você valoriza mais?</p>
+        <div class="options">
+          <button onclick="responder('gryffindor')">Coragem</button>
+          <button onclick="responder('slytherin')">Ambição</button>
+          <button onclick="responder('ravenclaw')">Inteligência</button>
+          <button onclick="responder('hufflepuff')">Lealdade</button>
+        </div>
+      </div>
+      <div class="question hidden" id="question2">
+        <p>2. Qual animal você escolheria como companheiro?</p>
+        <div class="options">
+          <button onclick="responder('gryffindor')">Leão</button>
+          <button onclick="responder('slytherin')">Cobra</button>
+          <button onclick="responder('ravenclaw')">Águia</button>
+          <button onclick="responder('hufflepuff')">Texugo</button>
+        </div>
+      </div>
+      <div class="question hidden" id="question3">
+        <p>3. Qual é o seu maior medo?</p>
+        <div class="options">
+          <button onclick="responder('gryffindor')">Fracassar</button>
+          <button onclick="responder('slytherin')">Ser irrelevante</button>
+          <button onclick="responder('ravenclaw')">Ignorância</button>
+          <button onclick="responder('hufflepuff')">Trair alguém</button>
+        </div>
+      </div>
+      <div class="question hidden" id="question4">
+        <p>4. Qual atividade você mais gosta?</p>
+        <div class="options">
+          <button onclick="responder('gryffindor')">Aventuras</button>
+          <button onclick="responder('slytherin')">Estratégias</button>
+          <button onclick="responder('ravenclaw')">Estudar</button>
+          <button onclick="responder('hufflepuff')">Ajudar os outros</button>
+        </div>
+      </div>
+    </div>
+    <div id="result" class="hidden">
+      <p class="result">Sua casa é:</p>
+      <p id="casa" class="house"></p>
+      <button id="voltarHome">Voltar para Home</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
